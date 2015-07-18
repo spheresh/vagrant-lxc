@@ -175,7 +175,6 @@ module Vagrant
             bridge_name
           ]
           @sudo_wrapper.run(*cmd)
-          @sudo_wrapper.run('ifconfig', bridge_name, 'up')
         end
       end
 
